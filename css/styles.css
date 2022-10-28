@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.navHolder .logo {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+}
+.navHolder .logo img {
+  height: 100%;
+}
+.navHolder .bars {
+  display: none;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navHolder .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lavender;
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.4s, opacity 0.2s ease-in;
+  transition: height 0.4s, opacity 0.2s ease-in;
+}
+.navHolder .links a {
+  text-decoration: none;
+  color: black;
+}
+.navHolder .links.active {
+  height: 150px;
+  width: 100vw;
+  opacity: 1;
+}
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+    margin-left: 888px;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.homeSection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.homeSection .h2 {
+  margin: 0 auto;
+}
+.homeSection .homeHero {
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 50px;
+  background-image: url(../images/homeHero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeSection .column {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1500px;
+  width: 80%;
+}
+.homeSection .column .pricingOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.homeSection .column .pricingTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.homeSection .column .pricingThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.galleryHolder {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 98%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.galleryHolder .h2 {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  margin-bottom: 50px;
+}
+.galleryHolder .row {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+.galleryHolder .row .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.galleryHolder .row .gallery .left {
+  width: 45%;
+}
+.galleryHolder .row .gallery .left img {
+  width: 200px;
+  height: 200px;
+}
+.galleryHolder .row .gallery .right {
+  width: 45%;
+}
+
+.productSection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.productSection .h2 {
+  margin: 0 auto;
+}
+.productSection .productHero {
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 50px;
+  background-image: url(../images/productHero.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productSection .column {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1500px;
+  width: 80%;
+}
+.productSection .column .pricingOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.productSection .column .pricingTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.productSection .column .pricingThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.contactSection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.contactSection .h2 {
+  margin: 0 auto;
+}
+.contactSection .contactHero {
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 50px;
+  background-image: url(../images/contactHero.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactSection .column {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1500px;
+  width: 80%;
+}
+.contactSection .column .pricingOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.contactSection .column .pricingTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}
+.contactSection .column .pricingThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 300px;
+  background-image: url(../images/flowersFour.avif);
+}

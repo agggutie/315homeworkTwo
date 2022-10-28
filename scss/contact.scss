@@ -1,0 +1,71 @@
+.contactSection{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+
+    .h2{
+        margin: 0 auto;
+    }
+
+    .contactHero{
+        width: 100%;
+        min-height: 400px;
+        margin-bottom: 50px;
+        background-image: url(../images/contactHero.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .column{
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        min-height: 1500px;
+        width: 80%;
+
+        .pricingOne{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+            height: 300px;
+            background-image: url(../images/flowersFour.avif);
+
+            .pricingText{
+
+            }
+        }
+        .pricingTwo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+            height: 300px;
+            background-image: url(../images/flowersFour.avif);
+
+            .pricingText{
+
+            }
+        }
+        .pricingThree{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+            height: 300px;
+            background-image: url(../images/flowersFour.avif);
+
+            .pricingText{
+
+            }
+        }
+    }
+}
